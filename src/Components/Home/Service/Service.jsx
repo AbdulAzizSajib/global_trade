@@ -10,43 +10,37 @@ const Service = () => {
       title: "social assistant that is flexible",
       description:
         "Looking for a social assistant that is flexible? Look no further! Our team of assistants is here to help.",
-      logo: (
-        <GiCrystalGrowth className="text-4xl text-[#00150f]"></GiCrystalGrowth>
-      ),
+      logo: <GiCrystalGrowth className="text-4xl "></GiCrystalGrowth>,
     },
     {
       title: "modules for smart trading",
       description:
         "There are tons of modules for smart trading out there, but finding the right ones takes time and research.",
-      logo: <FaBitcoin className="text-4xl text-[#00150f]"></FaBitcoin>,
+      logo: <FaBitcoin className="text-4xl"></FaBitcoin>,
     },
     {
       title: "reporter's news analyst",
       description:
         "As a news analyst, the reporter observed various stories unfolding, providing casual yet insightful analysis on each.",
-      logo: (
-        <IoAnalyticsOutline className="text-4xl text-[#00150f]"></IoAnalyticsOutline>
-      ),
+      logo: <IoAnalyticsOutline className="text-4xl"></IoAnalyticsOutline>,
     },
     {
       title: "trading cryptocurrency platform",
       description:
         "Have you checked out any new rcryptocurrency platforms? I hear there are some exciting ones coming soon!",
-      logo: <TbWorldDollar className="text-4xl text-[#00150f]"></TbWorldDollar>,
+      logo: <TbWorldDollar className="text-4xl"></TbWorldDollar>,
     },
     {
       title: "Changes to exchange orders",
       description:
         "Hey, just wanted to give you a heads up that there have been some changes to exchange orders recently.",
-      logo: (
-        <FaCommentsDollar className="text-4xl text-[#00150f]"></FaCommentsDollar>
-      ),
+      logo: <FaCommentsDollar className="text-4xl"></FaCommentsDollar>,
     },
     {
       title: "price notification module",
       description:
         "So I added a price notification module to my online shopping app, and now I'm saving money like crazy!",
-      logo: <PiBank className="text-4xl text-[#00150f]"></PiBank>,
+      logo: <PiBank className="text-4xl"></PiBank>,
     },
   ];
   return (
@@ -66,9 +60,9 @@ const Service = () => {
           {data.map((box, index) => (
             <div
               key={index}
-              className="flex bg-[#21342f] flex-col items-center justify-center p-4 space-y-2 border rounded-2xl"
+              className="flex group bg-[#21342f] flex-col items-center justify-center p-4 space-y-2 border border-transparent hover:border-[#04FDB7] rounded-2xl"
             >
-              <div className="p-5 bg-white border-2 rounded-full">
+              <div className="p-5 bg-white group-hover:bg-[#00150f] group-hover:text-[#04FDB7] border-2 rounded-full">
                 {box.logo}
               </div>
               <h2 className="text-3xl font-bold text-white">{box.title}</h2>
